@@ -1,0 +1,43 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://arshadalgalib.eu.org/wp-content/uploads/2024/11/391681.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+.summary-card, .feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-card:hover, .feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.table th {
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  font-size: 14px;
+  font-weight: bold;
+}
