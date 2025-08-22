@@ -18,7 +18,7 @@ A web-based personal finance management application for developers and startups 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/finance-tracker.git
+   git clone https://github.com/arshadalgalib/finance-tracker.git
    cd finance-tracker
    ```
 
