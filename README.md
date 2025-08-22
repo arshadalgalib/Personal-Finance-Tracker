@@ -39,7 +39,7 @@ A web-based personal finance management application for developers and startups 
 
 5. **Run the Application**:
    ```bash
-   npm start
+   node index.js
    ```
    - Access at `http://localhost:3000`.
 
