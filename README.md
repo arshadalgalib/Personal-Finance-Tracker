@@ -1,6 +1,6 @@
 # Personal Finance Tracker
 
-A web-based personal finance management application for developers and startups to track income and expenses efficiently. Built with HTML, CSS, Bootstrap, EJS, Node.js, Express.js, and SQLite, with WordPress integration support.
+A web-based personal finance management application for developers and startups to track income and expenses efficiently. Built with HTML, CSS, Bootstrap, EJS, Node.js, Express.js, and SQLite.
 
 ## Features
 
