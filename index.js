@@ -3,12 +3,12 @@ const session = require('express-session');
 const bcrypt = require('bcrypt');
 const Database = require('better-sqlite3');
 const path = require('path');
-const fs = require('fs'); // From Node filesystem topics
+const fs = require('fs'); 
 
 const app = express();
-const db = new Database('database.db'); // Connect to SQLite DB (creates file if not exists)
+const db = new Database('database.db'); 
 
-// Create tables if not exist (hardcoded SQL for simplicity)
+// Create tables if not exist 
 db.exec(`
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -25,12 +25,12 @@ db.exec(`
   );
 `);
 
-// Middleware (from Express topics)
-app.use(express.urlencoded({ extended: true })); // For form data (POST)
-app.use(express.static(path.join(__dirname, 'public'))); // Serve CSS
-app.set('view engine', 'ejs'); // Use EJS for rendering
+// Middleware 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public'))); 
+app.set('view engine', 'ejs'); 
 app.use(session({
-  secret: 'simple-secret', // Change in real app
+  secret: 'simple-secret', 
   resave: false,
   saveUninitialized: true
 }));
@@ -44,7 +44,7 @@ function isLoggedIn(req, res, next) {
   }
 }
 
-// Middleware to check if admin (simple: username 'admin')
+// Middleware to check if admin
 async function isAdmin(req, res, next) {
   if (req.session.username === 'admin') {
     next();
@@ -72,7 +72,7 @@ app.post('/login', async (req, res) => {
     req.session.username = user.username;
     res.redirect('/dashboard');
   } else {
-    res.render('login', { currentPage: 'login', isLoggedIn: false }); // Updated to pass variables on failure
+    res.render('login', { currentPage: 'login', isLoggedIn: false }); 
   }
 });
 
@@ -84,12 +84,12 @@ app.get('/register', (req, res) => {
 // Register handle (POST)
 app.post('/register', async (req, res) => {
   const { username, password } = req.body;
-  const hashed = await bcrypt.hash(password, 10); // Hash password
+  const hashed = await bcrypt.hash(password, 10); 
   try {
     db.prepare('INSERT INTO users (username, password) VALUES (?, ?)').run(username, hashed);
     res.redirect('/login');
   } catch {
-    res.render('register', { currentPage: 'register', isLoggedIn: false }); // Updated to pass variables on failure
+    res.render('register', { currentPage: 'register', isLoggedIn: false });
   }
 });
 
