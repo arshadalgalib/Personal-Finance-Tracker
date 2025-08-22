@@ -2,6 +2,8 @@
 
 A web-based personal finance management application for developers and startups to track income and expenses efficiently. Built with HTML, CSS, Bootstrap, EJS, Node.js, Express.js, and SQLite, with WordPress integration support.
 
+![Finance Tracker Screenshot](https://github.com/arshadalgalib/Personal-Finance-Tracker/blob/main/images/Homepage.png)
+
 ## Features
 
 - **Home Page**: Welcome message, feature highlights, and register/login links.
@@ -46,6 +48,8 @@ A web-based personal finance management application for developers and startups 
 6. **Test Credentials**:
    - Admin: Username: `admin`, Password: `123`
    - Or register a new user.
+
+     ```
 
 ## Notes
 
