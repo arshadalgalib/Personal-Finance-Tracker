@@ -1,0 +1,52 @@
+<%- include('header', { currentPage: 'home', isLoggedIn: isLoggedIn }) %>
+
+<!-- Page-specific CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<section class="hero-section text-center text-white py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Hey Welcome to My Personal Finance Tracker</h1>
+    <p class="lead">Manage your income and expenses with ease and take control of your finances.</p>
+    <div class="mt-4">
+      <a href="/register" class="btn btn-primary btn-lg me-2">Get Started</a>
+      <a href="/login" class="btn btn-outline-light btn-lg">Login</a>
+      <a href="https://arshadalgalib.eu.org/" class="btn btn-outline-light btn-lg">Visit My Personal Website</a>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Why Use My Finance Tracker?</h2>
+    <h1 class="text-center mb-4">&</h1>
+    <h2 class="text-center mb-4">Why Not Others!</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm feature-card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Track Transactions</h5>
+            <p class="card-text">Easily add, edit, or delete your income and expenses in one place.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm feature-card">
+          <div class="card-body text-center">
+            <h5 class="card-title">View Dashboard</h5>
+            <p class="card-text">Get a clear overview of your total income, expenses, and balance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm feature-card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Secure Admin Access</h5>
+            <p class="card-text">Admins can monitor all users' financial summaries securely.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('footer') %>
