@@ -1,4 +1,4 @@
-# Finance Tracker
+# Personal Finance Tracker
 
 A web-based personal finance management application for developers and startups to track income and expenses efficiently. Built with HTML, CSS, Bootstrap, EJS, Node.js, Express.js, and SQLite, with WordPress integration support.
 
@@ -18,8 +18,8 @@ A web-based personal finance management application for developers and startups 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/arshadalgalib/finance-tracker.git
-   cd finance-tracker
+   git clone https://github.com/arshadalgalib/Personal-Finance-Tracker.git
+   cd Personal-Finance-Tracker
    ```
 
 2. **Install Node.js and npm**:
